@@ -24,7 +24,7 @@ const app = new Vue({
       };
       
       //INSERT用のAPIを呼び出し
-      const response = await axios.post('',param);
+      const response = await axios.post('https://m3h-ito-functionapiapp1107.azurewebsites.net/api/INSERT',param);
       
       //結果をコンソールに出力
       console.log(response.data);
@@ -33,7 +33,7 @@ const app = new Vue({
     // データベースからデータを取得する関数
     readData: async function() {
       //SELECT用のAPIを呼び出し      
-      const response = await axios.get('');
+      const response = await axios.get('https://m3h-ito-functionapiapp1107.azurewebsites.net/api/SELECT');
       
       //結果をコンソールに出力
       console.log(response.data);
